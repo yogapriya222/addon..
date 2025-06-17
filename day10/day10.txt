@@ -1,0 +1,13 @@
+use sample;
+create table student(name varchar(20),marks int,department varchar(10),section char(1));
+select * from student;
+insert into student(name,marks,department,section)values("mythily",80,"IT","a"),("pooja",86,"ct","b"),("priya",90,"ct","b"),
+("keerthu",90,"ct","b"),("mithuna",87,"ct","b");
+update student set name="poomozhi"where name="pooja";
+select *from student where marks<85;
+select name,department,section from student;
+alter table student add gender varchar(10);
+update student set gender="female";
+alter table student drop section;
+truncate table student;
+drop table student;
